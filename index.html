@@ -1,39 +1,128 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Doğukan | Siber Güvenlik Uzmanı</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Doğukan Demir | Siber Güvenlik Uzmanı</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>Doğukan</h1>
-    <p>Siber Güvenlik Uzmanı</p>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container nav-content">
+      <div class="logo">Doğukan</div>
+      <div class="nav-links">
+        <a href="#about">Hakkımda</a>
+        <a href="#projects">Projeler</a>
+        <a href="#certificates">Sertifikalar</a>
+        <a href="#contact">İletişim</a>
+        <a href="cv-dogukan.pdf" class="cv-link" target="_blank">📄 CV</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero">
+    <div class="container">
+      <h1>Doğukan Demir</h1>
+      <p>Sistem & Ağ Mühendisliği | Siber Güvenlik Analisti</p>
+      <a href="#contact" class="cta-button">Bana Ulaş</a>
+    </div>
   </header>
 
-  <section class="about">
+  <!-- Hakkımda -->
+  <section id="about" class="container">
     <h2>Hakkımda</h2>
-    <p>Merhaba, ben Doğukannn. Sistem ve ağ mühendisliği alanında uzmanlaşmış bir siber güvenlik uzmanıyım. Kendimi sürekli geliştirmeye ve yeni teknolojilere açık olmaya özen gösteriyorum.</p>
+    <p>Kendini geliştirmeye önem veren, teknolojiye tutkuyla bağlı bir mühendis adayıyım. Sistem ve ağ mühendisliği alanında uzmanlaşırken, siber güvenlik konularında bilgi ve becerilerimi sürekli geliştiriyorum. Yenilikçi çözümler üretmek ve karmaşık problemleri çözmek benim için bir tutku.</p>
   </section>
 
-  <section class="projects">
+  <!-- Projeler -->
+  <section id="projects" class="container">
     <h2>Projelerim</h2>
     <ul>
-      <li>🔐 Kişiye özel wordlist oluşturucu</li>
-      <li>🧠 Yapay zekâ destekli şifre analiz aracı</li>
-      <li>🖥 MİB (Merkezi İşlem Birimi) tasarımı - Quartus</li>
+      <li>Kişiye özel wordlist oluşturucu</li>
+      <li>Yapay zekâ destekli şifre analiz aracı</li>
+      <li>MİB (Merkezi İşlem Birimi) tasarımı - Quartus</li>
     </ul>
   </section>
 
-  <section class="contact">
-    <h2>İletişim</h2>
-    <p>E-posta: <a href="mailto:dogukan@example.com">dogukan@example.com</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/dogukan" target="_blank">linkedin.com/in/dogukan</a></p>
+  <!-- Sertifikalar -->
+  <section id="certificates" class="container">
+    <h2>Sertifikalarım</h2>
+    <div class="certificates-list">
+      <div class="certificate"><h3>Cisco DevNet Associate</h3><p>Ağ yazılımı çözümlerinde uzmanlık.</p></div>
+      <div class="certificate"><h3>CCNA: Enterprise Networking, Security, and Automation</h3><p>Gelişmiş ağ yönetimi ve otomasyon.</p></div>
+      <div class="certificate"><h3>CCNA: Introduction to Networks</h3><p>Ağ temelleri üzerine kapsamlı bilgi.</p></div>
+      <div class="certificate"><h3>CCNA: Switching, Routing, and Wireless Essentials</h3><p>Yönlendirme ve kablosuz ağlar.</p></div>
+      <div class="certificate"><h3>Ethical Hacker</h3><p>Etik hacking ve güvenlik testleri eğitimi.</p></div>
+      <div class="certificate"><h3>Introduction to Cybersecurity</h3><p>Siber tehditler ve temel savunma.</p></div>
+      <div class="certificate"><h3>Introduction to Data Science</h3><p>Veri analizi ve bilimsel temeller.</p></div>
+      <div class="certificate"><h3>Network Defense</h3><p>Ağ güvenliği ve savunma stratejileri.</p></div>
+    </div>
   </section>
 
+  <!-- İletişim -->
+  <section id="contact" class="container">
+    <h2>İletişim</h2>
+    <div class="contact-icons">
+      <img src="https://cdn-icons-png.flaticon.com/512/281/281769.png" alt="Gmail">
+      <a href="mailto:ddogukan03@gmail.com">ddogukan03@gmail.com</a>
+    </div>
+    <div class="contact-icons">
+      <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+      <a href="https://www.linkedin.com/in/do%C4%9Fukandemir" target="_blank">linkedin.com/in/doğukandemir</a>
+    </div>
+  </section>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" title="Yukarı dön">↑</button>
+
+  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Doğukan. Tüm hakları saklıdır.</p>
+    <p>© 2025 Doğukan Demir. Tüm hakları saklıdır.</p>
   </footer>
+
+  <script>
+    // Smooth scrolling with navbar offset
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+        const navbarHeight = document.querySelector('.navbar').offsetHeight;
+        const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - navbarHeight;
+
+        window.scrollTo({
+          top: targetPosition,
+          behavior: 'smooth'
+        });
+      });
+    });
+
+    // Back to top button
+    const backToTopButton = document.getElementById('back-to-top');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {
+        backToTopButton.style.display = 'block';
+      } else {
+        backToTopButton.style.display = 'none';
+      }
+    });
+
+    backToTopButton.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Navbar shadow on scroll
+    window.addEventListener('scroll', () => {
+      const navbar = document.querySelector('.navbar');
+      if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+  </script>
 </body>
 </html>
