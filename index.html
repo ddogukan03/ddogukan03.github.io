@@ -22,11 +22,7 @@
                 <a href="#contact" data-section="contact" class="nav-link">İletişim</a>
             </div>
             <div class="nav-actions">
-                <label class="cv-upload">
-                    <input type="file" accept=".pdf" id="cv-upload-input" aria-describedby="cv-upload-desc" hidden>
-                    <span class="cv-link" aria-label="CV yükle veya aç">CV Yükle <span class="shield" aria-hidden="true">🛡️</span></span>
-                    <span id="cv-upload-desc" class="sr-only">PDF formatında CV yükleyin, yüklendiyse yeni sekmede açılır</span>
-                </label>
+                <a href="cv-dogukan.pdf" target="_blank" class="cv-link" aria-label="CV dosyasını yeni sekmede aç">CV Göster <span class="shield" aria-hidden="true">🛡️</span></a>
                 <button type="button" class="mobile-menu-button" aria-label="Mobil menüyü aç/kapat" aria-controls="mobile-nav-links" aria-expanded="false">☰</button>
             </div>
         </div>
@@ -35,11 +31,7 @@
             <a href="#projects" data-section="projects" class="nav-link">Projeler</a>
             <a href="#certificates" data-section="certificates" class="nav-link">Sertifikalar</a>
             <a href="#contact" data-section="contact" class="nav-link">İletişim</a>
-            <label class="cv-upload">
-                <input type="file" accept=".pdf" id="cv-upload-input-mobile" aria-describedby="cv-upload-desc-mobile" hidden>
-                <span class="cv-link" aria-label="CV yükle veya aç">CV Yükle <span class="shield" aria-hidden="true">🛡️</span></span>
-                <span id="cv-upload-desc-mobile" class="sr-only">PDF formatında CV yükleyin, yüklendiyse yeni sekmede açılır</span>
-            </label>
+            <a href="cv-dogukan.pdf" target="_blank" class="cv-link" aria-label="CV dosyasını yeni sekmede aç">CV Göster <span class="shield" aria-hidden="true">🛡️</span></a>
         </div>
     </nav>
 
@@ -63,7 +55,7 @@
             <h2>Projelerim</h2>
             <div class="projects-grid">
                 <div class="project-card">
-                    <svg class="card-icon" role="img" aria-label="Proje ikonu" viewBox="0 0 24 24" fill="none" stroke="#1e3a8a" stroke-width="2">
+                    <svg class="card-icon" role="img" aria-label="Proje ikonu" viewBox="0 0 24 24" fill="var(--blue)" stroke="none">
                         <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9z"/>
                         <polyline points="9 22 9 12 15 12 15 22"/>
                     </svg>
@@ -71,7 +63,7 @@
                     <p>Python ile geliştirilmiş, kullanıcı girdilerine göre özelleştirilmiş wordlistler oluşturan bir araç.</p>
                 </div>
                 <div class="project-card">
-                    <svg class="card-icon" role="img" aria-label="Proje ikonu" viewBox="0 0 24 24" fill="none" stroke="#1e3a8a" stroke-width="2">
+                    <svg class="card-icon" role="img" aria-label="Proje ikonu" viewBox="0 0 24 24" fill="var(--blue)" stroke="none">
                         <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9z"/>
                         <polyline points="9 22 9 12 15 12 15 22"/>
                     </svg>
@@ -79,7 +71,7 @@
                     <p>Makine öğrenimi algoritmaları kullanarak zayıf şifreleri tespit eden ve analiz eden bir araç.</p>
                 </div>
                 <div class="project-card">
-                    <svg class="card-icon" role="img" aria-label="Proje ikonu" viewBox="0 0 24 24" fill="none" stroke="#1e3a8a" stroke-width="2">
+                    <svg class="card-icon" role="img" aria-label="Proje ikonu" viewBox="0 0 24 24" fill="var(--blue)" stroke="none">
                         <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9z"/>
                         <polyline points="9 22 9 12 15 12 15 22"/>
                     </svg>
@@ -93,56 +85,56 @@
             <h2>Sertifikalarım</h2>
             <div class="certificates-list">
                 <div class="certificate">
-                    <svg class="card-icon" role="img" aria-label="Sertifika ikonu" viewBox="0 0 24 24" fill="none" stroke="#1e3a8a" stroke-width="2">
+                    <svg class="card-icon" role="img" aria-label="Sertifika ikonu" viewBox="0 0 24 24" fill="var(--blue)" stroke="none">
                         <path d="M12 8c0-2.21 1.79-4 4-4s4 1.79 4 4-1.79 4-4 4-4-1.79-4-4zM4 18v2h16v-2H4z"/>
                     </svg>
                     <h3>Cisco DevNet Associate <span class="check" aria-hidden="true">✔</span></h3>
                     <p>Ağ yazılımı çözümlerinde uzmanlık.</p>
                 </div>
                 <div class="certificate">
-                    <svg class="card-icon" role="img" aria-label="Sertifika ikonu" viewBox="0 0 24 24" fill="none" stroke="#1e3a8a" stroke-width="2">
+                    <svg class="card-icon" role="img" aria-label="Sertifika ikonu" viewBox="0 0 24 24" fill="var(--blue)" stroke="none">
                         <path d="M12 8c0-2.21 1.79-4 4-4s4 1.79 4 4-1.79 4-4 4-4-1.79-4-4zM4 18v2h16v-2H4z"/>
                     </svg>
                     <h3>CCNA: Enterprise Networking, Security, and Automation <span class="check" aria-hidden="true">✔</span></h3>
                     <p>Gelişmiş ağ yönetimi ve otomasyon.</p>
                 </div>
                 <div class="certificate">
-                    <svg class="card-icon" role="img" aria-label="Sertifika ikonu" viewBox="0 0 24 24" fill="none" stroke="#1e3a8a" stroke-width="2">
+                    <svg class="card-icon" role="img" aria-label="Sertifika ikonu" viewBox="0 0 24 24" fill="var(--blue)" stroke="none">
                         <path d="M12 8c0-2.21 1.79-4 4-4s4 1.79 4 4-1.79 4-4 4-4-1.79-4-4zM4 18v2h16v-2H4z"/>
                     </svg>
                     <h3>CCNA: Introduction to Networks <span class="check" aria-hidden="true">✔</span></h3>
                     <p>Ağ temelleri üzerine kapsamlı bilgi.</p>
                 </div>
                 <div class="certificate">
-                    <svg class="card-icon" role="img" aria-label="Sertifika ikonu" viewBox="0 0 24 24" fill="none" stroke="#1e3a8a" stroke-width="2">
+                    <svg class="card-icon" role="img" aria-label="Sertifika ikonu" viewBox="0 0 24 24" fill="var(--blue)" stroke="none">
                         <path d="M12 8c0-2.21 1.79-4 4-4s4 1.79 4 4-1.79 4-4 4-4-1.79-4-4zM4 18v2h16v-2H4z"/>
                     </svg>
                     <h3>CCNA: Switching, Routing, and Wireless Essentials <span class="check" aria-hidden="true">✔</span></h3>
                     <p>Yönlendirme ve kablosuz ağlar.</p>
                 </div>
                 <div class="certificate">
-                    <svg class="card-icon" role="img" aria-label="Sertifika ikonu" viewBox="0 0 24 24" fill="none" stroke="#1e3a8a" stroke-width="2">
+                    <svg class="card-icon" role="img" aria-label="Sertifika ikonu" viewBox="0 0 24 24" fill="var(--blue)" stroke="none">
                         <path d="M12 8c0-2.21 1.79-4 4-4s4 1.79 4 4-1.79 4-4 4-4-1.79-4-4zM4 18v2h16v-2H4z"/>
                     </svg>
                     <h3>Ethical Hacker <span class="check" aria-hidden="true">✔</span></h3>
                     <p>Etik hacking ve güvenlik testleri eğitimi.</p>
                 </div>
                 <div class="certificate">
-                    <svg class="card-icon" role="img" aria-label="Sertifika ikonu" viewBox="0 0 24 24" fill="none" stroke="#1e3a8a" stroke-width="2">
+                    <svg class="card-icon" role="img" aria-label="Sertifika ikonu" viewBox="0 0 24 24" fill="var(--blue)" stroke="none">
                         <path d="M12 8c0-2.21 1.79-4 4-4s4 1.79 4 4-1.79 4-4 4-4-1.79-4-4zM4 18v2h16v-2H4z"/>
                     </svg>
                     <h3>Introduction to Cybersecurity <span class="check" aria-hidden="true">✔</span></h3>
                     <p>Siber tehditler ve temel savunma.</p>
                 </div>
                 <div class="certificate">
-                    <svg class="card-icon" role="img" aria-label="Sertifika ikonu" viewBox="0 0 24 24" fill="none" stroke="#1e3a8a" stroke-width="2">
+                    <svg class="card-icon" role="img" aria-label="Sertifika ikonu" viewBox="0 0 24 24" fill="var(--blue)" stroke="none">
                         <path d="M12 8c0-2.21 1.79-4 4-4s4 1.79 4 4-1.79 4-4 4-4-1.79-4-4zM4 18v2h16v-2H4z"/>
                     </svg>
                     <h3>Introduction to Data Science <span class="check" aria-hidden="true">✔</span></h3>
                     <p>Veri analizi ve bilimsel temeller.</p>
                 </div>
                 <div class="certificate">
-                    <svg class="card-icon" role="img" aria-label="Sertifika ikonu" viewBox="0 0 24 24" fill="none" stroke="#1e3a8a" stroke-width="2">
+                    <svg class="card-icon" role="img" aria-label="Sertifika ikonu" viewBox="0 0 24 24" fill="var(--blue)" stroke="none">
                         <path d="M12 8c0-2.21 1.79-4 4-4s4 1.79 4 4-1.79 4-4 4-4-1.79-4-4zM4 18v2h16v-2H4z"/>
                     </svg>
                     <h3>Network Defense <span class="check" aria-hidden="true">✔</span></h3>
@@ -192,40 +184,9 @@
 
         document.addEventListener('DOMContentLoaded', () => {
             const navbar = document.querySelector('.navbar');
-            const ctaButton = document.querySelector('.cta-button');
             const backToTopButton = document.querySelector('#back-to-top');
             const mobileMenuButton = document.querySelector('.mobile-menu-button');
             const mobileNavLinks = document.querySelector('.mobile-nav-links');
-            let cvFile = null;
-
-            // CV Upload Handling
-            const cvInputs = document.querySelectorAll('input[type="file"]');
-            const cvLinks = document.querySelectorAll('.cv-link');
-
-            cvInputs.forEach(input => {
-                input.addEventListener('change', (e) => {
-                    const file = e.target.files[0];
-                    if (file && file.type === 'application/pdf') {
-                        cvFile = file;
-                        cvLinks.forEach(link => {
-                            link.textContent = 'CV Aç ';
-                            link.classList.remove('disabled');
-                            link.setAttribute('aria-label', 'CV dosyasını yeni sekmede aç');
-                        });
-                    }
-                });
-            });
-
-            cvLinks.forEach(link => {
-                link.addEventListener('click', (e) => {
-                    if (cvFile) {
-                        e.preventDefault();
-                        const url = URL.createObjectURL(cvFile);
-                        window.open(url, '_blank');
-                        setTimeout(() => URL.revokeObjectURL(url), 1000);
-                    }
-                });
-            });
 
             // Smooth scrolling with navbar offset
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -293,15 +254,9 @@
                 const navbarHeight = navbar.offsetHeight;
                 const documentHeight = document.documentElement.scrollHeight;
                 const windowHeight = window.innerHeight;
-                const scrollPercentage = scrollPosition / (documentHeight - windowHeight);
 
                 // Navbar shadow
                 navbar.classList.toggle('scrolled', scrollPosition > 50);
-
-                // CTA button color
-                if (ctaButton) {
-                    ctaButton.style.backgroundColor = scrollPercentage < 0.5 ? 'var(--blue)' : 'var(--coral)';
-                }
 
                 // Update active section
                 const sections = document.querySelectorAll('section');
@@ -350,9 +305,10 @@
                 window.removeEventListener('scroll', handleScroll);
             });
 
-            // Intersection Observer for section animations
+            // Intersection Observer for section and card animations
             const sections = document.querySelectorAll('section');
-            if (sections.length) {
+            const cards = document.querySelectorAll('.project-card, .certificate');
+            if (sections.length || cards.length) {
                 const observer = new IntersectionObserver((entries) => {
                     entries.forEach(entry => {
                         if (entry.isIntersecting) {
@@ -363,6 +319,10 @@
                 }, { threshold: 0.1 });
 
                 sections.forEach(section => observer.observe(section));
+                cards.forEach((card, index) => {
+                    card.style.transitionDelay = `${index * 0.1}s`;
+                    observer.observe(card);
+                });
             }
         });
     </script>
