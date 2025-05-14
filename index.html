@@ -6,7 +6,7 @@
     <meta name="description" content="Doğukan Demir - Siber Güvenlik Analisti ve Sistem/Ağ Mühendisi Portföyü">
     <meta name="keywords" content="Doğukan Demir, siber güvenlik, sistem mühendisliği, ağ mühendisliği, portföy">
     <meta name="author" content="Doğukan Demir">
-    <title>Doğukan Demir | Siber Güvenlik Uzmanı</title>
+    <title>Doğukan Demir |Understand the impact of cyber threats and network security with Doğukan Demir, a dedicated Cybersecurity Analyst and Systems/Network Engineer. Explore my projects, certifications, and expertise in building secure, sustainable tech infrastructures.></title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;700&display=swap" as="style" onload="this.rel='stylesheet'">
@@ -216,14 +216,14 @@
                     const targetId = anchor.getAttribute('href');
                     const targetElement = document.querySelector(targetId);
                     if (targetElement) {
-                        const navbarHeight = navbar.offsetHeight;
+                        const navbarHeight = navbar ? navbar.offsetHeight : 0;
                         window.scrollTo({
                             top: targetElement.offsetTop - navbarHeight,
                             behavior: 'smooth'
                         });
 
                         // Close mobile menu
-                        if (mobileNavLinks.classList.contains('open')) {
+                        if (mobileNavLinks && mobileNavLinks.classList.contains('open')) {
                             closeMobileMenu();
                         }
 
@@ -257,10 +257,12 @@
 
             // Mobile menu toggle and outside click handler
             function closeMobileMenu() {
-                mobileNavLinks.classList.remove('open');
-                mobileMenuButton.classList.remove('active');
-                mobileMenuButton.setAttribute('aria-expanded', 'false');
-                mobileNavLinks.setAttribute('aria-hidden', 'true');
+                if (mobileNavLinks && mobileMenuButton) {
+                    mobileNavLinks.classList.remove('open');
+                    mobileMenuButton.classList.remove('active');
+                    mobileMenuButton.setAttribute('aria-expanded', 'false');
+                    mobileNavLinks.setAttribute('aria-hidden', 'true');
+                }
             }
 
             if (mobileMenuButton && mobileNavLinks) {
@@ -290,12 +292,14 @@
             // Scroll handling with debounce
             const handleScroll = debounce(() => {
                 const scrollPosition = window.scrollY;
-                const navbarHeight = navbar.offsetHeight;
+                const navbarHeight = navbar ? navbar.offsetHeight : 0;
                 const documentHeight = document.documentElement.scrollHeight;
                 const windowHeight = window.innerHeight;
 
                 // Navbar shadow
-                navbar.classList.toggle('scrolled', scrollPosition > 50);
+                if (navbar) {
+                    navbar.classList.toggle('scrolled', scrollPosition > 50);
+                }
 
                 // Update active section
                 const sections = document.querySelectorAll('section');
@@ -359,15 +363,15 @@
                 });
             }
 
-            // Touch feedback for certificate cards
-            document.querySelectorAll('.certificate').forEach(card => {
+            // Touch feedback for project and certificate cards
+            document.querySelectorAll('.project-card, .certificate').forEach(card => {
                 card.addEventListener('touchstart', () => {
                     card.classList.add('touched');
                 });
                 card.addEventListener('touchend', () => {
                     setTimeout(() => {
                         card.classList.remove('touched');
-                    }, 300);
+                    }, 400);
                 });
             });
         });
