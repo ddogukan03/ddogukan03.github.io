@@ -9,7 +9,7 @@
     <title>Doğukan Demir | Siber Güvenlik Uzmanı</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="favicon.png">
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@500;700&display=swap" as="style" onload="this.rel='stylesheet'">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;700&display=swap" as="style" onload="this.rel='stylesheet'">
 </head>
 <body>
     <nav class="navbar" role="navigation">
@@ -22,7 +22,7 @@
                 <a href="#contact" data-section="contact" class="nav-link">İletişim</a>
             </div>
             <div class="nav-actions">
-                <a href="cv-dogukan.pdf" target="_blank" class="cv-link" aria-label="CV dosyasını yeni sekmede aç">CV Göster <span class="shield" aria-hidden="true">🛡️</span></a>
+                <a href="cv-dogukan.pdf" target="_blank" rel="noopener" class="cv-link" aria-label="CV dosyasını yeni sekmede aç">CV Göster <span class="shield" aria-hidden="true">🛡️</span></a>
                 <button type="button" class="mobile-menu-button" aria-label="Mobil menüyü aç/kapat" aria-controls="mobile-nav-links" aria-expanded="false">☰</button>
             </div>
         </div>
@@ -31,7 +31,7 @@
             <a href="#projects" data-section="projects" class="nav-link">Projeler</a>
             <a href="#certificates" data-section="certificates" class="nav-link">Sertifikalar</a>
             <a href="#contact" data-section="contact" class="nav-link">İletişim</a>
-            <a href="cv-dogukan.pdf" target="_blank" class="cv-link" aria-label="CV dosyasını yeni sekmede aç">CV Göster <span class="shield" aria-hidden="true">🛡️</span></a>
+            <a href="cv-dogukan.pdf" target="_blank" rel="noopener" class="cv-link" aria-label="CV dosyasını yeni sekmede aç">CV Göster <span class="shield" aria-hidden="true">🛡️</span></a>
         </div>
     </nav>
 
@@ -55,25 +55,24 @@
             <h2>Projelerim</h2>
             <div class="projects-grid">
                 <div class="project-card">
-                    <svg class="card-icon" role="img" aria-label="Proje ikonu" viewBox="0 0 24 24" fill="var(--blue)" stroke="none">
-                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9z"/>
-                        <polyline points="9 22 9 12 15 12 15 22"/>
+                    <svg class="card-icon" role="img" aria-label="Proje ikonu" viewBox="0 0 24 24" fill="none" stroke="var(--primary-blue)" stroke-width="2">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                        <circle cx="12" cy="10" r="3"/>
                     </svg>
                     <h3>Kişiye özel wordlist oluşturucu</h3>
                     <p>Python ile geliştirilmiş, kullanıcı girdilerine göre özelleştirilmiş wordlistler oluşturan bir araç.</p>
                 </div>
                 <div class="project-card">
-                    <svg class="card-icon" role="img" aria-label="Proje ikonu" viewBox="0 0 24 24" fill="var(--blue)" stroke="none">
-                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9z"/>
-                        <polyline points="9 22 9 12 15 12 15 22"/>
+                    <svg class="card-icon" role="img" aria-label="Proje ikonu" viewBox="0 0 24 24" fill="none" stroke="var(--primary-blue)" stroke-width="2">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
                     </svg>
                     <h3>Yapay zekâ destekli şifre analiz aracı</h3>
                     <p>Makine öğrenimi algoritmaları kullanarak zayıf şifreleri tespit eden ve analiz eden bir araç.</p>
                 </div>
                 <div class="project-card">
-                    <svg class="card-icon" role="img" aria-label="Proje ikonu" viewBox="0 0 24 24" fill="var(--blue)" stroke="none">
-                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9z"/>
-                        <polyline points="9 22 9 12 15 12 15 22"/>
+                    <svg class="card-icon" role="img" aria-label="Proje ikonu" viewBox="0 0 24 24" fill="none" stroke="var(--primary-blue)" stroke-width="2">
+                        <rect x="3" y="3" width="18" height="18" rx="2"/>
+                        <path d="M9 3v18"/>
                     </svg>
                     <h3>MİB (Merkezi İşlem Birimi) tasarımı - Quartus</h3>
                     <p>FPGA üzerinde basit bir MİB'in VHDL ile modellenmesi ve Quartus Prime ile sentezlenmesi projesi.</p>
@@ -84,62 +83,89 @@
         <section id="certificates" class="container">
             <h2>Sertifikalarım</h2>
             <div class="certificates-list">
-                <div class="certificate">
-                    <svg class="card-icon" role="img" aria-label="Sertifika ikonu" viewBox="0 0 24 24" fill="var(--blue)" stroke="none">
-                        <path d="M12 8c0-2.21 1.79-4 4-4s4 1.79 4 4-1.79 4-4 4-4-1.79-4-4zM4 18v2h16v-2H4z"/>
-                    </svg>
-                    <h3>Cisco DevNet Associate <span class="check" aria-hidden="true">✔</span></h3>
-                    <p>Ağ yazılımı çözümlerinde uzmanlık.</p>
-                </div>
-                <div class="certificate">
-                    <svg class="card-icon" role="img" aria-label="Sertifika ikonu" viewBox="0 0 24 24" fill="var(--blue)" stroke="none">
-                        <path d="M12 8c0-2.21 1.79-4 4-4s4 1.79 4 4-1.79 4-4 4-4-1.79-4-4zM4 18v2h16v-2H4z"/>
-                    </svg>
-                    <h3>CCNA: Enterprise Networking, Security, and Automation <span class="check" aria-hidden="true">✔</span></h3>
-                    <p>Gelişmiş ağ yönetimi ve otomasyon.</p>
-                </div>
-                <div class="certificate">
-                    <svg class="card-icon" role="img" aria-label="Sertifika ikonu" viewBox="0 0 24 24" fill="var(--blue)" stroke="none">
-                        <path d="M12 8c0-2.21 1.79-4 4-4s4 1.79 4 4-1.79 4-4 4-4-1.79-4-4zM4 18v2h16v-2H4z"/>
-                    </svg>
-                    <h3>CCNA: Introduction to Networks <span class="check" aria-hidden="true">✔</span></h3>
-                    <p>Ağ temelleri üzerine kapsamlı bilgi.</p>
-                </div>
-                <div class="certificate">
-                    <svg class="card-icon" role="img" aria-label="Sertifika ikonu" viewBox="0 0 24 24" fill="var(--blue)" stroke="none">
-                        <path d="M12 8c0-2.21 1.79-4 4-4s4 1.79 4 4-1.79 4-4 4-4-1.79-4-4zM4 18v2h16v-2H4z"/>
-                    </svg>
-                    <h3>CCNA: Switching, Routing, and Wireless Essentials <span class="check" aria-hidden="true">✔</span></h3>
-                    <p>Yönlendirme ve kablosuz ağlar.</p>
-                </div>
-                <div class="certificate">
-                    <svg class="card-icon" role="img" aria-label="Sertifika ikonu" viewBox="0 0 24 24" fill="var(--blue)" stroke="none">
-                        <path d="M12 8c0-2.21 1.79-4 4-4s4 1.79 4 4-1.79 4-4 4-4-1.79-4-4zM4 18v2h16v-2H4z"/>
-                    </svg>
-                    <h3>Ethical Hacker <span class="check" aria-hidden="true">✔</span></h3>
-                    <p>Etik hacking ve güvenlik testleri eğitimi.</p>
-                </div>
-                <div class="certificate">
-                    <svg class="card-icon" role="img" aria-label="Sertifika ikonu" viewBox="0 0 24 24" fill="var(--blue)" stroke="none">
-                        <path d="M12 8c0-2.21 1.79-4 4-4s4 1.79 4 4-1.79 4-4 4-4-1.79-4-4zM4 18v2h16v-2H4z"/>
-                    </svg>
-                    <h3>Introduction to Cybersecurity <span class="check" aria-hidden="true">✔</span></h3>
-                    <p>Siber tehditler ve temel savunma.</p>
-                </div>
-                <div class="certificate">
-                    <svg class="card-icon" role="img" aria-label="Sertifika ikonu" viewBox="0 0 24 24" fill="var(--blue)" stroke="none">
-                        <path d="M12 8c0-2.21 1.79-4 4-4s4 1.79 4 4-1.79 4-4 4-4-1.79-4-4zM4 18v2h16v-2H4z"/>
-                    </svg>
-                    <h3>Introduction to Data Science <span class="check" aria-hidden="true">✔</span></h3>
-                    <p>Veri analizi ve bilimsel temeller.</p>
-                </div>
-                <div class="certificate">
-                    <svg class="card-icon" role="img" aria-label="Sertifika ikonu" viewBox="0 0 24 24" fill="var(--blue)" stroke="none">
-                        <path d="M12 8c0-2.21 1.79-4 4-4s4 1.79 4 4-1.79 4-4 4-4-1.79-4-4zM4 18v2h16v-2H4z"/>
-                    </svg>
-                    <h3>Network Defense <span class="check" aria-hidden="true">✔</span></h3>
-                    <p>Ağ güvenliği ve savunma stratejileri.</p>
-                </div>
+                <a href="DevNet_Associate_certificate.pdf" target="_blank" rel="noopener" aria-label="Cisco DevNet Associate sertifikasını yeni sekmede aç">
+                    <div class="certificate">
+                        <svg class="card-icon" role="img" aria-label="Sertifika ikonu" viewBox="0 0 24 24" fill="none" stroke="var(--primary-blue)" stroke-width="2">
+                            <path d="M6 3v12a3 3 0 003 3h6a3 3 0 003-3V3"/>
+                            <path d="M11 3h2"/>
+                        </svg>
+                        <h3>Cisco DevNet Associate <span class="check" aria-hidden="true">✔</span></h3>
+                        <p>Ağ otomasyonu ve yazılım geliştirme.</p>
+                    </div>
+                </a>
+                <a href="CCNA-_Enterprise_Networking-_Security-_and_Automation_certificate_.pdf" target="_blank" rel="noopener" aria-label="CCNA Enterprise Networking, Security, and Automation sertifikasını yeni sekmede aç">
+                    <div class="certificate">
+                        <svg class="card-icon" role="img" aria-label="Sertifika ikonu" viewBox="0 0 24 24" fill="none" stroke="var(--primary-blue)" stroke-width="2">
+                            <path d="M5 13l4 4L19 7"/>
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        </svg>
+                        <h3>CCNA: Enterprise Networking</h3>
+                        <p>Kurumsal ağlar ve güvenlik otomasyonu.</p>
+                    </div>
+                </a>
+                <a href="CCNA-_Introduction_to_Networks_certificate.pdf" target="_blank" rel="noopener" aria-label="CCNA Introduction to Networks sertifikasını yeni sekmede aç">
+                    <div class="certificate">
+                        <svg class="card-icon" role="img" aria-label="Sertifika ikonu" viewBox="0 0 24 24" fill="none" stroke="var(--primary-blue)" stroke-width="2">
+                            <path d="M5 9l7-7 7 7"/>
+                            <path d="M12 2v20"/>
+                        </svg>
+                        <h3>CCNA: Introduction to Networks</h3>
+                        <p>Ağ protokolleri ve temel konfigürasyon.</p>
+                    </div>
+                </a>
+                <a href="CCNA-_Switching-_Routing-_and_Wireless_Essentials_certificate.pdf" target="_blank" rel="noopener" aria-label="CCNA Switching, Routing, and Wireless Essentials sertifikasını yeni sekmede aç">
+                    <div class="certificate">
+                        <svg class="card-icon" role="img" aria-label="Sertifika ikonu" viewBox="0 0 24 24" fill="none" stroke="var(--primary-blue)" stroke-width="2">
+                            <path d="M3 7h18"/>
+                            <path d="M3 12h18"/>
+                            <path d="M3 17h18"/>
+                        </svg>
+                        <h3>CCNA: Switching & Routing</h3>
+                        <p>Anahtarlama ve kablosuz ağ teknolojileri.</p>
+                    </div>
+                </a>
+                <a href="Ethical_Hacker_certificate.pdf" target="_blank" rel="noopener" aria-label="Ethical Hacker sertifikasını yeni sekmede aç">
+                    <div class="certificate">
+                        <svg class="card-icon" role="img" aria-label="Sertifika ikonu" viewBox="0 0 24 24" fill="none" stroke="var(--primary-blue)" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        </svg>
+                        <h3>Ethical Hacker <span class="check" aria-hidden="true">✔</span></h3>
+                        <p>Penetrasyon testi ve güvenlik analizi.</p>
+                    </div>
+                </a>
+                <a href="Introduction_to_Cybersecurity_certificate.pdf" target="_blank" rel="noopener" aria-label="Introduction to Cybersecurity sertifikasını yeni sekmede aç">
+                    <div class="certificate">
+                        <svg class="card-icon" role="img" aria-label="Sertifika ikonu" viewBox="0 0 24 24" fill="none" stroke="var(--primary-blue)" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            <path d="M12 8v4"/>
+                            <circle cx="12" cy="16" r="1"/>
+                        </svg>
+                        <h3>Intro to Cybersecurity</h3>
+                        <p>Siber tehditler ve savunma temelleri.</p>
+                    </div>
+                </a>
+                <a href="Introduction_to_Data_Science_certificate.pdf" target="_blank" rel="noopener" aria-label="Introduction to Data Science sertifikasını yeni sekmede aç">
+                    <div class="certificate">
+                        <svg class="card-icon" role="img" aria-label="Sertifika ikonu" viewBox="0 0 24 24" fill="none" stroke="var(--primary-blue)" stroke-width="2">
+                            <path d="M12 20v-6"/>
+                            <path d="M6 20v-4"/>
+                            <path d="M18 20v-8"/>
+                            <path d="M3 4h18"/>
+                        </svg>
+                        <h3>Intro to Data Science</h3>
+                        <p>Veri analizi ve bilimsel yöntemler.</p>
+                    </div>
+                </a>
+                <a href="Network_Defense_certificate.pdf" target="_blank" rel="noopener" aria-label="Network Defense sertifikasını yeni sekmede aç">
+                    <div class="certificate">
+                        <svg class="card-icon" role="img" aria-label="Sertifika ikonu" viewBox="0 0 24 24" fill="none" stroke="var(--primary-blue)" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            <path d="M5 13l4 4L19 7"/>
+                        </svg>
+                        <h3>Network Defense</h3>
+                        <p>Ağ güvenliği ve tehdit savunması.</p>
+                    </div>
+                </a>
             </div>
         </section>
 
@@ -161,10 +187,6 @@
     <footer>
         <div class="container footer-content">
             <p>© 2025 Doğukan Demir. Tüm hakları saklıdır. <span class="shield" aria-hidden="true">🛡️</span></p>
-            <div class="footer-links">
-                <a href="mailto:ddogukan03@gmail.com" aria-label="E-posta gönder"><img src="https://cdn-icons-png.flaticon.com/512/281/281769.png" alt="E-posta simgesi" loading="lazy"></a>
-                <a href="https://www.linkedin.com/in/do%C4%9Fukandemir" target="_blank" rel="noopener" aria-label="LinkedIn profili"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn simgesi" loading="lazy"></a>
-            </div>
         </div>
     </footer>
 
@@ -173,12 +195,11 @@
         function debounce(func, wait) {
             let timeout;
             return function executedFunction(...args) {
-                const later = () => {
-                    clearTimeout(timeout);
-                    func(...args);
-                };
                 clearTimeout(timeout);
-                timeout = setTimeout(later, wait);
+                timeout = setTimeout(() => {
+                    func(...args);
+                    timeout = null;
+                }, wait);
             };
         }
 
@@ -203,10 +224,7 @@
 
                         // Close mobile menu
                         if (mobileNavLinks.classList.contains('open')) {
-                            mobileNavLinks.classList.remove('open');
-                            mobileMenuButton.classList.remove('active');
-                            mobileMenuButton.setAttribute('aria-expanded', 'false');
-                            mobileNavLinks.setAttribute('aria-hidden', 'true');
+                            closeMobileMenu();
                         }
 
                         // Update active link
@@ -226,7 +244,6 @@
             if (backToTopButton) {
                 backToTopButton.addEventListener('click', () => {
                     window.scrollTo({ top: 0, behavior: 'smooth' });
-                    // Reset active link to "Hakkımda"
                     document.querySelectorAll('.nav-link').forEach(link => {
                         link.classList.remove('active');
                         link.removeAttribute('aria-current');
@@ -238,13 +255,35 @@
                 });
             }
 
-            // Mobile menu toggle
+            // Mobile menu toggle and outside click handler
+            function closeMobileMenu() {
+                mobileNavLinks.classList.remove('open');
+                mobileMenuButton.classList.remove('active');
+                mobileMenuButton.setAttribute('aria-expanded', 'false');
+                mobileNavLinks.setAttribute('aria-hidden', 'true');
+            }
+
             if (mobileMenuButton && mobileNavLinks) {
-                mobileMenuButton.addEventListener('click', () => {
+                mobileMenuButton.addEventListener('click', (e) => {
+                    e.stopPropagation();
                     const isOpen = mobileNavLinks.classList.toggle('open');
                     mobileMenuButton.classList.toggle('active');
                     mobileMenuButton.setAttribute('aria-expanded', isOpen);
                     mobileNavLinks.setAttribute('aria-hidden', !isOpen);
+                });
+
+                // Close menu on outside click
+                document.addEventListener('click', (e) => {
+                    if (!mobileNavLinks.contains(e.target) && !mobileMenuButton.contains(e.target) && mobileNavLinks.classList.contains('open')) {
+                        closeMobileMenu();
+                    }
+                });
+
+                // Close menu when a link is clicked
+                mobileNavLinks.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        closeMobileMenu();
+                    });
                 });
             }
 
@@ -300,11 +339,6 @@
 
             window.addEventListener('scroll', handleScroll);
 
-            // Cleanup event listeners
-            window.addEventListener('unload', () => {
-                window.removeEventListener('scroll', handleScroll);
-            });
-
             // Intersection Observer for section and card animations
             const sections = document.querySelectorAll('section');
             const cards = document.querySelectorAll('.project-card, .certificate');
@@ -324,6 +358,18 @@
                     observer.observe(card);
                 });
             }
+
+            // Touch feedback for certificate cards
+            document.querySelectorAll('.certificate').forEach(card => {
+                card.addEventListener('touchstart', () => {
+                    card.classList.add('touched');
+                });
+                card.addEventListener('touchend', () => {
+                    setTimeout(() => {
+                        card.classList.remove('touched');
+                    }, 300);
+                });
+            });
         });
     </script>
 </body>
