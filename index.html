@@ -44,13 +44,14 @@
             </div>
         </div>
         <div class="mobile-nav-links" id="mobile-nav-links" aria-hidden="true">
-            <a href="index.html" data-section="welcome" class="nav-link active" aria-current="page">Hoş Geldiniz</a>
-            <a href="kernel.html#about" data-section="about" class="nav-link">Hakkımda</a>
-            <a href="kernel.html#certificates" data-section="certificates" class="nav-link">Sertifikalarım</a>
-            <a href="kernel.html#experience" data-section="experience" class="nav-link">Deneyim</a>
-            <a href="kernel.html#projects" data-section="projects" class="nav-link">Projeler</a>
-            <a href="kernel.html#contact" data-section="contact" class="nav-link">İletişim</a>
-           <a href="Cv.pdf" target="_blank" rel="noopener" class="mobile-nav-link">CV Görüntüle <span class="check">✔</span></a>
+            <button class="mobile-menu-close" aria-label="Mobil menüyü kapat">&times;</button>
+            <a href="index.html" data-section="welcome" class="mobile-nav-link active" aria-current="page">Hoş Geldiniz</a>
+            <a href="kernel.html#about" data-section="about" class="mobile-nav-link">Hakkımda</a>
+            <a href="kernel.html#certificates" data-section="certificates" class="mobile-nav-link">Sertifikalarım</a>
+            <a href="kernel.html#experience" data-section="experience" class="mobile-nav-link">Deneyim</a>
+            <a href="kernel.html#projects" data-section="projects" class="mobile-nav-link">Projeler</a>
+            <a href="kernel.html#contact" data-section="contact" class="mobile-nav-link">İletişim</a>
+            <a href="Cv.pdf" target="_blank" rel="noopener" class="mobile-nav-link">CV Görüntüle <span class="check">✔</span></a>
         </div>
     </nav>
 
@@ -209,5 +210,15 @@
                     navbar.classList.toggle('scrolled', window.scrollY > 100);
                 });
             }
+
+            // Tilt effect
+            const tiltElements = document.querySelectorAll('[data-tilt]');
+            if (window.VanillaTilt && tiltElements.length) {
+                tiltElements.forEach(element => {
+                    VanillaTilt.init(element);
+                });
+            }
         });
     </script>
+</body>
+</html>
