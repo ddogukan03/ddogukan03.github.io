@@ -3,376 +3,161 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Doğukan Demir, Sistem ve Mühendisi, Siber Güvenlik Analisti. Projelerimi ve sertifikalarımı keşfedin.">
-    <meta name="keywords" content="Doğukandemir, sistem mühendisliği, ağ mühendisliği, siber güvenlik, portföy, teknoloji">
+    <meta name="description" content="Doğukan Demir'in hoş geldiniz sayfası. Sistem ve ağ mühendisi, siber güvenlik analisti. Portföyüme göz atın veya benimle iletişime geçin.">
+    <meta name="keywords" content="Doğukan Demir, sistem mühendisliği, ağ mühendisliği, siber güvenlik, hoş geldiniz">
     <meta name="author" content="Doğukan Demir">
-    <meta name="robots" content="index, follow">
+    <meta name="robots" content="kernel, follow">
     <meta property="og:site_name" content="Doğukan Demir">
-    <meta property="og:title" content="Doğukan Demir - Sistem ve Ağ Mühendisi">
-    <meta property="og:description" content="Sistem ve ağ mühendisliği ile siber güvenlik alanında uzmanlaşmış Doğukan Demir'in portföyü.">
+    <meta property="og:title" content="Doğukan Demir - Hoş Geldiniz">
+    <meta property="og:description" content="Doğukan Demir'in hoş geldiniz sayfası. Portföyümü keşfedin veya iletişime geçin.">
     <meta property="og:image" content="https://dogukandemir.com.tr/og-image.jpg">
-    <meta property="og:image:alt" content="Doğukan Demir Portföy">
-    <title>Doğukan Demir - Sistem ve Ağ Mühendisi</title>
-    <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "WebSite",
-            "name": "Doğukan Demir",
-            "url": "https://dogukandemir.com.tr/",
-            "author": {
-                "@type": "Person",
-                "name": "Doğukan Demir",
-                "jobTitle": "Sistem ve Ağ Mühendisi"
-            }
-        }
-    </script>
+    <meta property="og:image:alt" content="Doğukan Demir Hoş Geldiniz">
+    <title>Doğukan Demir - Hoş Geldiniz</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@600;700&display=swap">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/webp" href="favicon.webp">
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@600;700&display=swap">
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js" defer></script>
     <script src="assets/vanilla-tilt.min.js" defer></script>
-    <script src="assets/lottie.min.js" defer></script>
     <script src="assets/typed.min.js" defer></script>
 </head>
 <body>
     <div id="loader" class="loader" aria-hidden="true">
         <div class="spinner"></div>
     </div>
+
     <nav class="navbar" role="navigation" aria-label="Ana navigasyon">
         <div class="container nav-content">
-            <a href="#home" class="logo" aria-label="Doğukan Demir'in ana sayfasına dön">DD</a>
+            <a href="#" class="logo" aria-label="Doğukan Demir'in ana sayfasına dön" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">DD</a>
             <div class="nav-links">
-                <a href="welcome.html" data-section="welcome" class="nav-link" aria-label="Hoş geldiniz sayfası">Hoş Geldiniz</a>
-                <a href="#about" data-section="about" class="nav-link" aria-current="page">Hakkımda</a>
-                <a href="#certificates" data-section="certificates" class="nav-link">Sertifikalarım</a>
-                <a href="#experience" data-section="experience" class="nav-link">Deneyim</a>
-                <a href="#projects" data-section="projects" class="nav-link">Projeler</a>
-                <a href="#contact" data-section="contact" class="nav-link">İletişim</a>
+                <a href="index.html" data-section="index" class="nav-link active" aria-current="page">Hoş Geldiniz</a>
+                <a href="kernel.html#about" data-section="about" class="nav-link">Hakkımda</a>
+                <a href="kernel.html#certificates" data-section="certificates" class="nav-link">Sertifikalarım</a>
+                <a href="kernel.html#experience" data-section="experience" class="nav-link">Deneyim</a>
+                <a href="kernel.html#projects" data-section="projects" class="nav-link">Projeler</a>
+                <a href="kernel.html#contact" data-section="contact" class="nav-link">İletişim</a>
                 <a href="Cv.pdf" target="_blank" rel="noopener" class="cv-link" aria-label="CV dosyasını yeni sekmede aç">CV Görüntüle <span class="check" aria-hidden="true">✔</span></a>
             </div>
             <div class="nav-actions">
-                <button type="button" class="mobile-menu-button" aria-label="Mobil menüyü aç veya kapat" aria-controls="mobile-nav-links" aria-expanded="false"><i class="fas fa-bars"></i></button>
+                <button type="button" class="mobile-menu-button" aria-label="Mobil menüyü aç veya kapat" aria-controls="mobile-nav-links" aria-expanded="false">☰</button>
             </div>
         </div>
         <div class="mobile-nav-links" id="mobile-nav-links" aria-hidden="true">
-            <button class="mobile-menu-close" aria-label="Mobil menüyü kapat"><i class="fas fa-times"></i></button>
-            <a href="welcome.html" data-section="welcome" class="nav-link mobile-nav-link" aria-label="Hoş geldiniz sayfası">Hoş Geldiniz</a>
-            <a href="#about" data-section="about" class="nav-link mobile-nav-link" aria-current="page">Hakkımda</a>
-            <a href="#certificates" data-section="certificates" class="nav-link mobile-nav-link">Sertifikalarım</a>
-            <a href="#experience" data-section="experience" class="nav-link mobile-nav-link">Deneyim</a>
-            <a href="#projects" data-section="projects" class="nav-link mobile-nav-link">Projeler</a>
-            <a href="#contact" data-section="contact" class="nav-link mobile-nav-link">İletişim</a>
-            <a href="Cv.pdf" target="_blank" rel="noopener" class="cv-link mobile-nav-link" aria-label="CV dosyasını yeni sekmede aç">CV Görüntüle <span class="check" aria-hidden="true">✔</span></a>
+            <a href="index.html" data-section="welcome" class="nav-link active" aria-current="page">Hoş Geldiniz</a>
+            <a href="kernel.html#about" data-section="about" class="nav-link">Hakkımda</a>
+            <a href="kernel.html#certificates" data-section="certificates" class="nav-link">Sertifikalarım</a>
+            <a href="kernel.html#experience" data-section="experience" class="nav-link">Deneyim</a>
+            <a href="kernel.html#projects" data-section="projects" class="nav-link">Projeler</a>
+            <a href="kernel.html#contact" data-section="contact" class="nav-link">İletişim</a>
+           <a href="Cv.pdf" target="_blank" rel="noopener" class="mobile-nav-link">CV Görüntüle <span class="check">✔</span></a>
         </div>
     </nav>
-    <main>
-        <header id="home" class="hero">
-            <div id="lottie-network" class="lottie-bg"></div>
-            <div class="particles"></div>
-            <div class="hero-icons">
-                <svg class="hero-icon" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="1.5">
-                    <path d="M12 2a10 10 0 00-7 4 10 10 0 0014 0A10 10 0 0012 2z"/>
-                </svg>
-                <svg class="hero-icon" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="1.5">
-                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                </svg>
-            </div>
-            <div class="container hero-content">
-                <h1 class="fadeInUp">
-                    <span class="letter">DOĞUKAN DEMİR</span>
-                </h1>
-                <p class="fadeInUp typed-text"></p>
-                <div class="hero-cta fadeInUp">
-                    <a href="#contact" class="cta-button neon-pulse" aria-label="İletişim bölümüne git">İletişim</a>
-                    <a href="#about" class="cta-button secondary" id="exploreButton" aria-label="Hakkımda bölümüne git">Keşfet</a>
-                </div>
-            </div>
-        </header>
-        <section id="about" class="container section">
-            <h2 class="fadeInUp">Hakkımda</h2>
-            <div class="about-card scaleIn" data-tilt data-tilt-max="8" data-tilt-speed="500" id="aboutCard">
-                <p>Siber güvenlik ve sistem/ağ mühendisliği alanlarında kendimi geliştirmeye odaklanıyorum. Eğitimler, projeler ve edinme fırsatı bulduğum deneyimlerimle teknik altyapımı sürekli güçlendiriyor; edindiğim bilgi ve deneyimi ileri düzeye taşımak için çalışıyorum. Öğrenmeye açık, analitik düşünebilen ve çözüm odaklı bir yapıya sahibim. Amacım; yetkinliğimi derinleştirerek, karmaşık sistemler üzerinde etkin rol alabileceğim bir uzmanlık yolculuğu sürdürmek.</p>
-            </div>
-        </section>
-        <section id="certificates" class="container section">
-            <h2 class="fadeInUp">Sertifikalarım</h2>
-            <div class="certificates-list">
-                <a href="./DevNet_Associate_certificate.pdf" onclick="openCertificate('DevNet_Associate_certificate.pdf', event)" target="_blank" rel="noopener" aria-label="Cisco DevNet Associate sertifikasını yeni sekmede aç">
-                    <div class="certificate scaleIn" data-tilt data-tilt-max="8" data-tilt-speed="500">
-                        <svg class="card-icon" aria-label="Ağ otomasyonu ikonu" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2">
-                            <path d="M12 3v18m-6-6h12"/>
-                        </svg>
-                        <h3>Cisco, DevNet Associate <span class="check" aria-hidden="true"></span></h3>
-                        <p>Ağ otomasyonu ve yazılım geliştirme.</p>
-                    </div>
+
+    <main class="welcome-container">
+        <div id="particles-js" class="particles-bg"></div>
+        <div class="welcome-card scaleIn" data-tilt data-tilt-max="8" data-tilt-speed="500">
+            <img src="biometrik.jpg" alt="Doğukan Demir'in portre fotoğrafı" class="profile-photo fadeInUp" loading="lazy">
+            <h1 class="fadeInUp" style="animation-delay: 0.3s;">Merhaba, Ben <span class="highlight typed-name"></span></h1>
+            <p class="fadeInUp" style="animation-delay: 0.6s;">System and Network | Syber Security</p>
+            <p class="welcome-text fadeInUp" style="animation-delay: 0.9s;">
+                Teknolojiyle geleceği inşa ediyorum. Güvenli, yenilikçi ağ çözümleri için portföyümü keşfedin, bana ulaşın veya LinkedIn'de bağlantı kurun.
+            </p>
+            <div class="welcome-cta fadeInUp" style="animation-delay: 1.2s;">
+                <a href="kernel.html" class="cta-button neon-pulse" aria-label="Portföy sayfasına git">
+                    <span class="button-icon">🔍</span> Portföyümü Keşfet
                 </a>
-                <a href="./CCNA-_Introduction_to_Networks_certificate.pdf" onclick="openCertificate('CCNA-_Introduction_to_Networks_certificate.pdf', event)" target="_blank" rel="noopener" aria-label="CCNA Introduction to Networks sertifikasını yeni sekmede aç">
-                    <div class="certificate scaleIn" data-tilt data-tilt-max="8" data-tilt-speed="500">
-                        <i class="fa-solid fa-network-wired card-icon" aria-label="Ağ temelleri ikonu"></i>
-                        <h3>Cisco, CCNA: Introduction to Networks</h3>
-                        <p>Ağ protokolleri ve temel konfigürasyon.</p>
-                    </div>
-                </a>
-                <a href="./CCNA-_Enterprise_Networking-_Security-_and_Automation_certificate_.pdf" onclick="openCertificate('CCNA-_Enterprise_Networking-_Security-_and_Automation_certificate_.pdf', event)" target="_blank" rel="noopener" aria-label="CCNA Enterprise Networking sertifikasını yeni sekmede aç">
-                    <div class="certificate scaleIn" data-tilt data-tilt-max="8" data-tilt-speed="500">
-                        <i class="fa-solid fa-ethernet card-icon" aria-label="Kurumsal ağ ikonu"></i>
-                        <h3>Cisco, CCNA: Enterprise Networking <span class="check" aria-hidden="true"></span></h3>
-                        <p>Kurumsal ağlar ve güvenlik otomasyonu.</p>
-                    </div>
-                </a>
-                <a href="./CCNA-_Switching-_Routing-_and_Wireless_Essentials_certificate.pdf" onclick="openCertificate('CCNA-_Switching-_Routing-_and_Wireless_Essentials_certificate.pdf', event)" target="_blank" rel="noopener" aria-label="CCNA Switching, Routing ve Wireless sertifikasını yeni sekmede aç">
-                    <div class="certificate scaleIn" data-tilt data-tilt-max="8" data-tilt-speed="500">
-                        <i class="fa-solid fa-server card-icon" aria-label="Anahtarlama ve yönlendirme ikonu"></i>
-                        <h3>Cisco, CCNA: Switching & Routing</h3>
-                        <p>Anahtarlama ve kablosuz ağ teknolojileri.</p>
-                    </div>
-                </a>
-                <a href="./Ethical_Hacker_certificate.pdf" onclick="openCertificate('Ethical_Hacker_certificate.pdf', event)" target="_blank" rel="noopener" aria-label="Ethical Hacker sertifikasını yeni sekmede aç">
-                    <div class="certificate scaleIn" data-tilt data-tilt-max="8" data-tilt-speed="500">
-                        <i class="fa-solid fa-lock card-icon" aria-label="Siber güvenlik ikonu"></i>
-                        <h3>Cisco, Ethical Hacker <span class="check" aria-hidden="true"></span></h3>
-                        <p>Penetrasyon testi ve güvenlik analizi.</p>
-                    </div>
-                </a>
-                <a href="./Introduction_to_Cybersecurity_certificate.pdf" onclick="openCertificate('Introduction_to_Cybersecurity_certificate.pdf', event)" target="_blank" rel="noopener" aria-label="Introduction to Cybersecurity sertifikasını yeni sekmede aç">
-                    <div class="certificate scaleIn" data-tilt data-tilt-max="8" data-tilt-speed="500">
-                        <svg class="card-icon" aria-label="Siber tehdit ikonu" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2">
-                            <path d="M12 22s-8-4-8-8V5l8-3 8 3v8c0 4-8 8-8 8"/>
-                        </svg>
-                        <h3>Cisco, Introduction to Cybersecurity</h3>
-                        <p>Siber tehditler ve korumalar.</p>
-                    </div>
-                </a>
-                <a href="./Introduction_to_Data_Science_certificate.pdf" onclick="openCertificate('Introduction_to_Data_Science_certificate.pdf', event)" target="_blank" rel="noopener" aria-label="Introduction to Data Science sertifikasını yeni sekmede aç">
-                    <div class="certificate scaleIn" data-tilt data-tilt-max="8" data-tilt-speed="500">
-                        <i class="fa-solid fa-database card-icon" aria-label="Veri analizi ikonu"></i>
-                        <h3>Cisco, Introduction to Data Science</h3>
-                        <p>Veri analizi ve makine öğrenimi temelleri.</p>
-                    </div>
-                </a>
-                <a href="./Network_Defense_certificate.pdf" onclick="openCertificate('Network_Defense_certificate.pdf', event)" target="_blank" rel="noopener" aria-label="Network Defense sertifikasını yeni sekmede aç">
-                    <div class="certificate scaleIn" data-tilt data-tilt-max="8" data-tilt-speed="500">
-                        <svg class="card-icon" aria-label="Firewall ikonu" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2">
-                            <path d="M12 22s-8-4-8-8V5l8-3 8 3v8c0 4-8 8-8 8"/>
-                            <path d="M12 15a3 3 0 100-6 3 3 0 000 6z"/>
-                        </svg>
-                        <h3>Cisco, Network Security <span class="check" aria-hidden="true"></span></h3>
-                        <p>Ağ güvenliği ve tehdit savunması.</p>
-                    </div>
-                </a>
-            </div>
-        </section>
-        <section id="experience" class="container section">
-            <h2 class="fadeInUp">Deneyim</h2>
-            <div class="timeline">
-                <div class="timeline-item scaleIn" data-tilt data-tilt-max="8" data-tilt-speed="500" onclick="openModal('ozztech-experience')">
-                    <div class="timeline-content">
-                        <img src="OZZTECH_logo.png" alt="Ozztech Logo" class="experience-logo" loading="lazy">
-                        <h3>Cyber Security Intern</h3>
-                        <p>Ozztech Information Security and Software Inc. - Stajyer</p>
-                        <p>Term 2024 - Eyl 2024 · 3 ay</p>
-                        <p>İstanbul, Türkiye</p>
-                        <button class="details-button" onclick="openModal('ozztech-experience')">Detay</button>
-                    </div>
-                    <div class="timeline-dot"></div>
-                </div>
-            </div>
-        </section>
-        <section id="projects" class="container section">
-            <h2 class="fadeInUp">Projelerim</h2>
-            <div class="projects-grid">
-                <div class="project-card scaleIn" data-tilt data-tilt-max="8" data-tilt-speed="500">
-                    <svg class="card-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2">
-                        <path d="M8 7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2V5a2 2 0 00-2-2h-3v4M3 12h18"/>
-                    </svg>
-                    <h3>Kişiselleştirilmiş Wordlist Oluşturucu</h3>
-                    <p>Penetrasyon testleri için özelleştirilmiş wordlistler üreten Python tabanlı bir araç.</p>
-                    <button class="details-button" onclick="openModal('wordlist')">Detay</button>
-                </div>
-                <div class="project-card scaleIn" data-tilt data-tilt-max="8" data-tilt-speed="500">
-                    <svg class="card-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2">
-                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                    </svg>
-                    <h3>Yapay Zekâ Destekli Şifre Analiz Aracı</h3>
-                    <p>Makine öğrenimi ile zayıf şifreleri tespit eden kullanıcı dostu bir araç.</p>
-                    <button class="details-button" onclick="openModal('password-analyzer')">Detay</button>
-                </div>
-                <div class="project-card scaleIn" data-tilt data-tilt-max="8" data-tilt-speed="500">
-                    <svg class="card-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2">
-                        <rect x="3" y="3" width="18" height="18" rx="2"/>
-                        <path d="M9 9h6v6H9z"/>
-                    </svg>
-                    <h3>CPU Tasarım - Quartus</h3>
-                    <p>FPGA üzerinde VHDL ile tasarlanmış bir Merkezi İşlem Birimi.</p>
-                    <button class="details-button" onclick="openModal('mib-quartus')">Detay</button>
-                </div>
-            </div>
-        </section>
-        <section id="contact" class="container section">
-            <h2 class="fadeInUp">İletişim</h2>
-            <div class="contact-icons">
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ddogukan03@gmail.com" target="_blank" class="tooltip" data-tooltip="E-posta" aria-label="Doğukan Demir'e e-posta gönder" rel="noopener">
-                    <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2" aria-hidden="true">
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ddogukan03@gmail.com" target="_blank" class="cta-button secondary tooltip" data-tooltip="E-posta gönder" aria-label="Doğukan Demir'e Gmail ile e-posta gönder" rel="noopener noreferrer">
+                    <svg class="button-icon" viewBox="0 0 24 24" fill="none" stroke="var(--neon-purple)" stroke-width="2" aria-hidden="true">
                         <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
                         <polyline points="22,6 12,13 2,6"/>
                     </svg>
+                    Bana Ulaş
                 </a>
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ddogukan03@gmail.com" target="_blank" class="contact-text" rel="noopener">ddogukan03@gmail.com</a>
-                <a href="https://www.linkedin.com/in/doğukandemir" target="_blank" class="tooltip" data-tooltip="LinkedIn" aria-label="Doğukan Demir'in LinkedIn profilini ziyaret et" rel="noopener">
-                    <svg class="contact-icon" viewBox="0 0 24 24" fill="#0077b5" stroke="none" aria-hidden="true">
+                <a href="https://www.linkedin.com/in/doğukandemir" target="_blank" class="cta-button secondary tooltip" data-tooltip="LinkedIn profili" aria-label="Doğukan Demir'in LinkedIn profilini ziyaret et" rel="noopener noreferrer">
+                    <svg class="button-icon" viewBox="0 0 24 24" fill="#0077b5" stroke="none" aria-hidden="true">
                         <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/>
                         <circle cx="4" cy="4" r="2"/>
                     </svg>
+                    LinkedIn
                 </a>
-                <a href="https://www.linkedin.com/in/doğukandemir" target="_blank" class="contact-text" rel="noopener">linkedin.com/in/doğukandemir</a>
             </div>
-        </section>
-    </main>
-    <button id="back-to-top" title="Sayfanın başına dön" aria-label="Sayfanın başına dön">↑</button>
-    <div id="project-modal" class="modal" role="dialog" aria-labelledby="modal-title" aria-hidden="true">
-        <div class="modal-content">
-            <span class="modal-close" onclick="closeModal()" aria-label="Modali kapat">×</span>
-            <h2 id="modal-title">Detaylar</h2>
-            <div id="modal-body"></div>
         </div>
-    </div>
+    </main>
+
     <footer>
         <div class="container">
             <p>© 2025 Doğukan Demir. Tüm hakları saklıdır.</p>
         </div>
     </footer>
+
     <script>
-        function openCertificate(fileName, event) {
-            event.preventDefault();
-            try {
-                const url = `./${fileName}`; // Ana dizindeki dosyaları hedefler
-                window.open(url, '_blank');
-            } catch (error) {
-                console.error('Sertifika açılırken hata:', error);
-                alert('Sertifika açılırken hata oluştu. Lütfen daha sonra tekrar deneyin.');
-            }
-        }
-
-        const projectDetails = {
-            wordlist: {
-                title: 'Kişiselleştirilmiş Wordlist Oluşturucu',
-                description: 'Penetrasyon testleri için özelleştirilmiş wordlistler üreten Python tabanlı bir araç.',
-                details: 'Hızlı parola kombinasyonları için çoklu iş parçacığı kullanır.'
-            },
-            'password-analyzer': {
-                title: 'Yapay Zekâ Destekli Şifre Analiz Aracı',
-                description: 'Makine öğrenimi ile zayıf şifreleri tespit eden kullanıcı dostu bir araç.',
-                details: 'Şifre entropisini analiz eder ve sezgisel bir arayüz sunar.'
-            },
-            'mib-quartus': {
-                title: 'MİB Tasarımı - Quartus',
-                description: 'FPGA üzerinde VHDL ile tasarlanmış bir Merkezi İşlem Birimi.',
-                details: 'Quartus Prime ile optimize edilmiştir.'
-            },
-            'ozztech-experience': {
-                title: 'Cyber Security Intern - Ozztech',
-                description: 'Ozztech Information Security and Software Inc. staj deneyimim.',
-                details: '<ul><li>Ağ Güvenliği</li><li>Bilgisayar Ağları</li><li>Active Directory</li><li>Firewall</li><li>Müşteri Desteği</li><li>Ekip Çalışması</li><li>Microsoft Teknolojileri</li></ul>'
-            }
-        };
-
-        function openModal(projectId) {
-            try {
-                const modal = document.getElementById('project-modal');
-                const modalBody = document.getElementById('modal-body');
-                const modalTitle = document.getElementById('modal-title');
-                const project = projectDetails[projectId];
-                if (!modal || !modalBody || !modalTitle || !project) throw new Error('Modal veya proje verisi eksik.');
-                modalTitle.textContent = project.title;
-                modalBody.innerHTML = `<p>${project.description}</p><p><strong>Detaylar:</strong> ${project.details}</p>`;
-                modal.classList.add('open');
-                modal.setAttribute('aria-hidden', 'false');
-                document.body.classList.add('modal-open');
-            } catch (error) {
-                console.error('Modal açılırken hata:', error);
-            }
-        }
-
-        function closeModal() {
-            try {
-                const modal = document.getElementById('project-modal');
-                if (!modal) return;
-                modal.classList.remove('open');
-                modal.setAttribute('aria-hidden', 'true');
-                document.body.classList.remove('modal-open');
-            } catch (error) {
-                console.error('Modal kapatılırken hata:', error);
-            }
-        }
-
         document.addEventListener('DOMContentLoaded', () => {
-            try {
-                // Loader
-                const loader = document.querySelector('#loader');
-                if (loader) {
-                    window.addEventListener('load', () => {
-                        loader.style.opacity = '0';
-                        setTimeout(() => loader.style.display = 'none', 500);
-                    });
-                }
-
-                // Lottie Animation
-                const lottieContainer = document.querySelector('#lottie-network');
-                if (lottieContainer && typeof lottie !== 'undefined') {
-                    lottie.loadAnimation({
-                        container: lottieContainer,
-                        renderer: 'svg',
-                        loop: true,
-                        autoplay: true,
-                        path: 'assets/network-animation.json',
-                        rendererSettings: {
-                            preserveAspectRatio: 'xMidYMid slice'
-                        }
-                    });
-                }
-
-                // Typed.js
-                const typedElement = document.querySelector('.typed-text');
-                if (typedElement && typeof Typed !== 'undefined') {
-                    new Typed('.typed-text', {
-                        strings: ['Sistem ve Ağ Mühendisi', 'Siber Güvenlik Analisti', 'Ağ Otomasyon Uzmanı', 'Teknoloji Tutkunu'],
-                        typeSpeed: 60,
-                        backSpeed: 40,
-                        backDelay: 2000,
-                        loop: true
-                    });
-                } else if (typedElement) {
-                    typedElement.textContent = 'Sistem ve Ağ || Siber Güvenlik';
-                }
-
-                // Navbar and Mobile Menu
-                const navbar = document.querySelector('.navbar');
-                const backToTop = document.querySelector('#back-to-top');
-                const mobileMenuButton = document.querySelector('.mobile-menu-button');
-                const mobileMenuClose = document.querySelector('.mobile-menu-close');
-                const mobileNavLinks = document.querySelector('#mobile-nav-links');
-                const exploreButton = document.getElementById('exploreButton');
-                const aboutCard = document.getElementById('aboutCard');
-
-                if (!navbar || !backToTop || !mobileMenuButton || !mobileNavLinks || !exploreButton || !aboutCard) {
-                    throw new Error('Kritik elemanlardan biri eksik.');
-                }
-
-                exploreButton.addEventListener('click', () => {
-                    aboutCard.scrollIntoView({ behavior: 'smooth' });
+            // Loader
+            const loader = document.getElementById('loader');
+            if (loader) {
+                window.addEventListener('load', () => {
+                    loader.style.opacity = '0';
+                    setTimeout(() => loader.style.display = 'none', 300);
                 });
+            }
 
+            // Particles.js
+            if (window.particlesJS) {
+                particlesJS('particles-js', {
+                    particles: {
+                        number: { value: 80, density: { enable: true, value_area: 800 } },
+                        color: { value: ['#7c3aed', '#3b82f6'] },
+                        shape: { type: 'circle' },
+                        opacity: { value: 0.5, random: true },
+                        size: { value: 3, random: true },
+                        line_linked: { enable: true, distance: 150, color: '#7c3aed', opacity: 0.4, width: 1 },
+                        move: { enable: true, speed: 2, direction: 'none', random: false, straight: false, out_mode: 'out' }
+                    },
+                    interactivity: {
+                        detect_on: 'canvas',
+                        events: {
+                            onhover: { enable: true, mode: 'grab' },
+                            onclick: { enable: true, mode: 'push' },
+                            resize: true
+                        },
+                        modes: {
+                            grab: { distance: 200, line_linked: { opacity: 0.6 } },
+                            push: { particles_nb: 4 }
+                        }
+                    },
+                    retina_detect: true
+                });
+            }
+
+            // Typed.js
+            const typedElement = document.querySelector('.typed-name');
+            if (typedElement && typeof Typed !== 'undefined') {
+                new Typed('.typed-name', {
+                    strings: ['Doğukan Demir'],
+                    typeSpeed: 80,
+                    startDelay: 600,
+                    showCursor: false
+                });
+            } else if (typedElement) {
+                typedElement.textContent = 'Doğukan Demir';
+            }
+
+            // Navbar
+            const navbar = document.querySelector('.navbar');
+            const mobileMenuButton = document.querySelector('.mobile-menu-button');
+            const mobileNavLinks = document.querySelector('#mobile-nav-links');
+            if (navbar && mobileMenuButton && mobileNavLinks) {
                 // Handle nav-link clicks
                 document.querySelectorAll('.nav-link').forEach(anchor => {
                     anchor.addEventListener('click', (e) => {
                         e.preventDefault();
-                        // Clear active states
+                        // Remove active class from all links
                         document.querySelectorAll('.nav-link').forEach(link => {
                             link.classList.remove('active');
                             link.removeAttribute('aria-current');
                         });
-                        // Set clicked link as active
+                        // Add active class to clicked link
                         anchor.classList.add('active');
                         anchor.setAttribute('aria-current', 'page');
 
@@ -382,120 +167,47 @@
                             const targetElement = document.getElementById(targetId);
                             if (targetElement) {
                                 const navbarHeight = navbar.offsetHeight || 0;
-                                const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - navbarHeight;
-                                window.scrollTo({ top: targetPosition, behavior: 'smooth' });
-                                // Force update URL hash
-                                history.pushState(null, null, `#${targetId}`);
+                                window.scrollTo({ top: targetElement.offsetTop - navbarHeight, behavior: 'smooth' });
                             }
                         } else {
-                            window.location.href = href;
+                            window.location.href = href; // For external links like kernel.html
                         }
                     });
                 });
 
-                backToTop.addEventListener('click', () => {
-                    window.scrollTo({ top: 0, behavior: 'smooth' });
-                });
-
-                const toggleMobileMenu = () => {
+                // Mobile menu toggle
+                mobileMenuButton.addEventListener('click', (event) => {
+                    event.stopPropagation();
                     const isOpen = mobileNavLinks.classList.toggle('active');
                     mobileMenuButton.classList.toggle('active');
                     mobileMenuButton.setAttribute('aria-expanded', isOpen);
                     mobileNavLinks.setAttribute('aria-hidden', !isOpen);
-                    document.body.classList.toggle('no-scroll', isOpen);
-                };
+                });
 
-                mobileMenuButton.addEventListener('click', toggleMobileMenu);
-
-                if (mobileMenuClose) {
-                    mobileMenuClose.addEventListener('click', toggleMobileMenu);
-                }
-
+                // Close menu on outside click
                 document.addEventListener('click', (event) => {
                     if (!mobileNavLinks.contains(event.target) && !mobileMenuButton.contains(event.target) && mobileNavLinks.classList.contains('active')) {
-                        toggleMobileMenu();
+                        mobileNavLinks.classList.remove('active');
+                        mobileMenuButton.classList.remove('active');
+                        mobileMenuButton.setAttribute('aria-expanded', 'false');
+                        mobileNavLinks.setAttribute('aria-hidden', 'true');
                     }
                 });
 
+                // Close menu on link click
                 mobileNavLinks.querySelectorAll('a').forEach(link => {
-                    link.addEventListener('click', toggleMobileMenu);
-                });
-
-                document.addEventListener('keydown', (event) => {
-                    if (event.key === 'Escape' && mobileNavLinks.classList.contains('active')) {
-                        toggleMobileMenu();
-                    }
-                    const modal = document.querySelector('#project-modal');
-                    if (event.key === 'Escape' && modal && modal.classList.contains('open')) {
-                        closeModal();
-                    }
-                });
-
-                // Section Observer for Navbar Active State (Secondary to Click Events)
-                const sections = document.querySelectorAll('.section, #home');
-                const navLinks = document.querySelectorAll('.nav-link');
-                const observerOptions = {
-                    root: null,
-                    rootMargin: '-150px 0px -60% 0px',
-                    threshold: 0.4
-                };
-
-                const observer = new IntersectionObserver((entries) => {
-                    entries.forEach(entry => {
-                        if (entry.isIntersecting) {
-                            const sectionId = entry.target.id;
-                            const targetLink = document.querySelector(`.nav-link[data-section="${sectionId}"]`);
-                            // Only update if no link is manually clicked (no 'active' class)
-                            if (targetLink && !document.querySelector('.nav-link.active')) {
-                                navLinks.forEach(link => {
-                                    link.classList.remove('active');
-                                    link.removeAttribute('aria-current');
-                                });
-                                targetLink.classList.add('active');
-                                targetLink.setAttribute('aria-current', 'page');
-                            }
-                        }
+                    link.addEventListener('click', () => {
+                        mobileNavLinks.classList.remove('active');
+                        mobileMenuButton.classList.remove('active');
+                        mobileMenuButton.setAttribute('aria-expanded', 'false');
+                        mobileNavLinks.setAttribute('aria-hidden', 'true');
                     });
-                }, observerOptions);
+                });
 
-                sections.forEach(section => section && observer.observe(section));
-
-                // Scroll Handler
+                // Navbar scroll effect
                 window.addEventListener('scroll', () => {
                     navbar.classList.toggle('scrolled', window.scrollY > 100);
-                    backToTop.style.opacity = window.scrollY > 300 ? '1' : '0';
-                    backToTop.style.visibility = window.scrollY > 300 ? 'visible' : 'hidden';
                 });
-
-                // Modal Click Outside to Close
-                const modal = document.querySelector('#project-modal');
-                if (modal) {
-                    modal.addEventListener('click', (event) => {
-                        if (event.target === modal) {
-                            closeModal();
-                        }
-                    });
-                }
-
-                // Card Animations
-                const cards = document.querySelectorAll('.project-card, .certificate, .timeline-item, .about-card');
-                const cardObserver = new IntersectionObserver((entries) => {
-                    entries.forEach(entry => {
-                        if (entry.isIntersecting) {
-                            entry.target.classList.add('visible');
-                            cardObserver.unobserve(entry.target);
-                        }
-                    });
-                }, { threshold: 0.1 });
-
-                cards.forEach((card, index) => {
-                    if (card) {
-                        card.style.transitionDelay = `${index * 0.1}s`;
-                        cardObserver.observe(card);
-                    }
-                });
-            } catch (error) {
-                console.error('Sayfa yüklenirken hata:', error);
             }
         });
     </script>
