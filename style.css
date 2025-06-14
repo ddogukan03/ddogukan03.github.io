@@ -241,7 +241,7 @@ body::before {
     position: fixed;
     top: 0;
     right: 0;
-    width: 300px;
+    width: 280px;
     height: auto;
     max-height: calc(100vh - 80px);
     display: flex;
@@ -328,7 +328,7 @@ body::before {
     align-items: center;
     justify-content: center;
     background: linear-gradient(135deg, var(--primary-dark), var(--midnight-blue));
-    padding: 80px 24px;
+    padding: 120px 24px 80px; /* padding-top artırıldı */
     overflow: hidden;
     z-index: 1;
 }
@@ -635,11 +635,11 @@ footer p {
 
 @media (max-width: 768px) {
     .welcome-container {
-        padding: 60px 16px 80px; /* Alt padding artırıldı */
+        padding: 120px 16px 80px; /* padding-top artırıldı */
     }
     .welcome-card {
         padding: 32px;
-        margin-top: 0; /* Üstten sabit kalmaması için */
+        margin-top: 0;
     }
     .welcome-card h1 {
         font-size: 2.5rem;
@@ -653,7 +653,7 @@ footer p {
     .profile-photo {
         width: 140px;
         height: 140px;
-        margin-bottom: 16px; /* Boşluk azaltıldı */
+        margin-bottom: 16px;
     }
     .cta-button {
         padding: 12px 24px;
@@ -673,18 +673,18 @@ footer p {
         display: block;
     }
     .mobile-nav-links {
-        width: 280px; /* Hafif daraltıldı */
+        width: 280px;
         max-height: calc(100vh - 80px);
     }
 }
 
 @media (max-width: 480px) {
     .welcome-container {
-        padding: 60px 16px 60px; /* Daha az alt padding */
+        padding: 120px 16px 60px; /* padding-top artırıldı */
     }
     .welcome-card {
         padding: 20px;
-        width: 90%; /* Daha az genişlik */
+        width: 90%;
     }
     .welcome-card h1 {
         font-size: 2rem;
@@ -699,7 +699,7 @@ footer p {
     .profile-photo {
         width: 120px;
         height: 120px;
-        margin-bottom: 12px; /* Daha az boşluk */
+        margin-bottom: 12px;
     }
     .cta-button {
         padding: 10px 20px;
