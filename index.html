@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@600;700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="icon" type="image/webp" href="favicon.webp">
+    <link rel="icon" type="image/png" href="favicon.png">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <script src="assets/vanilla-tilt.min.js" defer></script>
     <script src="assets/lottie.min.js" defer></script>
@@ -52,18 +52,18 @@
                 <a href="Cv.pdf" target="_blank" rel="noopener" class="cv-link" aria-label="CV dosyasını yeni sekmede aç">CV Görüntüle <span class="check" aria-hidden="true">✔</span></a>
             </div>
             <div class="nav-actions">
-                <button type="button" class="mobile-menu-button" aria-label="Mobil menüyü aç veya kapat" aria-controls="mobile-nav-links" aria-expanded="false">☰</button>
+                <button type="button" class="mobile-menu-button" aria-label="Mobil menüyü aç veya kapat" aria-controls="mobile-nav-links" aria-expanded="false"><i class="fas fa-bars"></i></button>
             </div>
         </div>
         <div class="mobile-nav-links" id="mobile-nav-links" aria-hidden="true">
-            <button class="mobile-menu-close" aria-label="Mobil menüyü kapat">×</button>
-            <a href="welcome.html" data-section="welcome" class="nav-link" aria-label="Hoş geldiniz sayfası">Hoş Geldiniz</a>
-            <a href="#about" data-section="about" class="nav-link" aria-current="page">Hakkımda</a>
-            <a href="#certificates" data-section="certificates" class="nav-link">Sertifikalarım</a>
-            <a href="#experience" data-section="experience" class="nav-link">Deneyim</a>
-            <a href="#projects" data-section="projects" class="nav-link">Projeler</a>
-            <a href="#contact" data-section="contact" class="nav-link">İletişim</a>
-            <a href="Cv.pdf" target="_blank" rel="noopener" class="cv-link" aria-label="CV dosyasını yeni sekmede aç">CV Görüntüle <span class="check" aria-hidden="true">✔</span></a>
+            <button class="mobile-menu-close" aria-label="Mobil menüyü kapat"><i class="fas fa-times"></i></button>
+            <a href="welcome.html" data-section="welcome" class="nav-link mobile-nav-link" aria-label="Hoş geldiniz sayfası">Hoş Geldiniz</a>
+            <a href="#about" data-section="about" class="nav-link mobile-nav-link" aria-current="page">Hakkımda</a>
+            <a href="#certificates" data-section="certificates" class="nav-link mobile-nav-link">Sertifikalarım</a>
+            <a href="#experience" data-section="experience" class="nav-link mobile-nav-link">Deneyim</a>
+            <a href="#projects" data-section="projects" class="nav-link mobile-nav-link">Projeler</a>
+            <a href="#contact" data-section="contact" class="nav-link mobile-nav-link">İletişim</a>
+            <a href="Cv.pdf" target="_blank" rel="noopener" class="cv-link mobile-nav-link" aria-label="CV dosyasını yeni sekmede aç">CV Görüntüle <span class="check" aria-hidden="true">✔</span></a>
         </div>
     </nav>
     <main>
@@ -154,7 +154,7 @@
                 <a href="./Network_Defense_certificate.pdf" onclick="openCertificate('Network_Defense_certificate.pdf', event)" target="_blank" rel="noopener" aria-label="Network Defense sertifikasını yeni sekmede aç">
                     <div class="certificate scaleIn" data-tilt data-tilt-max="8" data-tilt-speed="500">
                         <svg class="card-icon" aria-label="Firewall ikonu" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2">
-                            <path d="M12 22s-8-4-8-8V5l8-3 8 3v8c0 4-8 8-8 8z"/>
+                            <path d="M12 22s-8-4-8-8V5l8-3 8 3v8c0 4-8 8-8 8"/>
                             <path d="M12 15a3 3 0 100-6 3 3 0 000 6z"/>
                         </svg>
                         <h3>Cisco, Network Security <span class="check" aria-hidden="true"></span></h3>
@@ -219,7 +219,7 @@
                     </svg>
                 </a>
                 <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ddogukan03@gmail.com" target="_blank" class="contact-text" rel="noopener">ddogukan03@gmail.com</a>
-                <a href="https://www.linkedin.com/in/dogukandemir" target="_blank" class="tooltip" data-tooltip="LinkedIn" aria-label="Doğukan Demir'in LinkedIn profilini ziyaret et" rel="noopener">
+                <a href="https://www.linkedin.com/in/doğukandemir" target="_blank" class="tooltip" data-tooltip="LinkedIn" aria-label="Doğukan Demir'in LinkedIn profilini ziyaret et" rel="noopener">
                     <svg class="contact-icon" viewBox="0 0 24 24" fill="#0077b5" stroke="none" aria-hidden="true">
                         <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/>
                         <circle cx="4" cy="4" r="2"/>
@@ -343,7 +343,7 @@
                         loop: true
                     });
                 } else if (typedElement) {
-                    typedElement.textContent = 'Sistem ve Ağ || Siber GÜvenlik';
+                    typedElement.textContent = 'Sistem ve Ağ || Siber Güvenlik';
                 }
 
                 // Navbar and Mobile Menu
@@ -499,5 +499,3 @@
             }
         });
     </script>
-</body>
-</html>

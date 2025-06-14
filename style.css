@@ -205,7 +205,7 @@ body::before {
     background: none;
     border: none;
     color: var(--text-primary);
-    font-size: 2rem;
+    font-size: 1.8rem;
     cursor: pointer;
     transition: transform 0.3s ease, color 0.3s ease;
     padding: 8px;
@@ -213,68 +213,106 @@ body::before {
 
 .mobile-menu-button.active {
     color: var(--neon-purple);
-    transform: rotate(180deg);
+    transform: rotate(90deg);
 }
 
 .mobile-menu-close {
     background: none;
     border: none;
     color: var(--text-primary);
-    font-size: 2.5rem;
+    font-size: 2rem;
     cursor: pointer;
     position: absolute;
     top: 20px;
     right: 20px;
     transition: var(--transition);
+    border-radius: 50%;
+    padding: 10px;
 }
 
 .mobile-menu-close:hover {
     color: var(--neon-purple);
-    transform: rotate(180deg);
+    background: rgba(124, 58, 237, 0.1);
 }
 
 .mobile-nav-links {
     position: fixed;
     top: 0;
     right: 0;
-    width: 70%;
-    height: 100%;
-    background: var(--primary-dark);
+    width: 300px;
+    height: auto; /* Dinamik yükseklik */
+    max-height: calc(100vh - 80px); /* Navbar yüksekliği hariç */
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding: 60px 16px;
+    justify-content: flex-start;
+    padding: 80px 24px 24px;
     gap: 20px;
     transform: translateX(100%);
-    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    z-index: 999;
-    box-shadow: -10px 0 30px rgba(0, 0, 0, 0.7);
-    opacity: 1;
+    opacity: 0;
+    pointer-events: none;
+    background: transparent;
+    overflow-y: auto;
+    z-index: 1001;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.mobile-nav-links::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(15, 23, 42, 0.98);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    z-index: 0;
 }
 
 .mobile-nav-links.active {
     transform: translateX(0);
+    opacity: 1;
+    pointer-events: auto;
 }
 
-.mobile-nav-links a {
-    font-size: 1.3rem;
+.mobile-nav-link {
+    position: relative;
+    z-index: 2;
     color: var(--text-primary);
+    font-size: 1.4rem;
     text-decoration: none;
-    padding: 10px 0;
+    padding: 12px 16px;
     transition: var(--transition);
-    text-shadow: 0 0 8px rgba(124, 58, 237, 0.4);
-    text-align: center;
+    text-align: left;
+    border-bottom: 1px solid rgba(124, 58, 237, 0.2);
 }
 
-.mobile-nav-links a:hover, .mobile-nav-links a.active {
+.mobile-nav-link:hover, .mobile-nav-link.active {
     color: var(--neon-purple);
     text-shadow: 0 0 12px rgba(124, 58, 237, 0.6);
+    background: rgba(124, 58, 237, 0.05);
+    border-radius: 8px;
 }
 
-.mobile-nav-links .cv-link {
+.mobile-nav-link:last-child {
+    border-bottom: none;
+    background: linear-gradient(90deg, var(--neon-purple), #6b21a8);
+    color: var(--text-primary);
+    padding: 12px 16px;
+    border-radius: 12px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
     justify-content: center;
-    border: 2px solid var(--neon-purple);
-    margin-top: 16px;
+    gap: 10px;
+    box-shadow: 0 0 15px rgba(124, 58, 237, 0.5);
+    border: 1px solid rgba(124, 58, 237, 0.4);
+}
+
+.mobile-nav-link:last-child:hover {
+    background: linear-gradient(90deg, #6b21a8, var(--neon-purple));
+    box-shadow: 0 0 30px rgba(124, 58, 237, 0.7);
+    transform: translateY(-4px);
 }
 
 .hero {
@@ -706,7 +744,7 @@ section h2::after {
 
 .timeline {
     position: relative;
-    padding: 20px 0;
+    padding: 40px 0;
 }
 
 .timeline::before {
@@ -724,9 +762,9 @@ section h2::after {
 .timeline-item {
     position: relative;
     width: calc(100% - 60px);
-    margin-bottom: 40px;
+    margin-bottom: 60px;
     background: linear-gradient(to right, var(--card-dark-bg) 50%, var(--card-light-bg) 50%);
-    padding: 16px;
+    padding: 20px;
     border-radius: 20px;
     box-shadow: var(--card-shadow);
     transition: var(--transition);
@@ -736,6 +774,9 @@ section h2::after {
     position: relative;
     overflow: hidden;
     margin-left: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .timeline-item:hover::before {
@@ -1133,12 +1174,16 @@ footer p {
         height: 40px;
         font-size: 40px;
     }
+    .timeline {
+        padding: 20px 0;
+    }
     .timeline-item {
         min-width: 220px;
         padding: 12px;
         width: calc(100% - 40px);
         margin-left: 40px;
         margin-right: 20px;
+        margin-bottom: 40px;
     }
     .timeline::before {
         left: 20px;
@@ -1161,5 +1206,9 @@ footer p {
     }
     .about-card p {
         font-size: 1.1rem;
+    }
+    .mobile-nav-links {
+        width: 300px;
+        max-height: calc(100vh - 80px); /* Navbar yüksekliği hariç */
     }
 }
