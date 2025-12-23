@@ -166,12 +166,28 @@
         <section id="experience" class="container section">
             <h2 class="fadeInUp">Deneyim</h2>
             <div class="timeline">
+                <!-- YENİ EKLENEN DENEYİM - En güncel olduğu için en üstte -->
+                <div class="timeline-item scaleIn" data-tilt data-tilt-max="8" data-tilt-speed="500" onclick="openModal('natica-experience')">
+                    <div class="timeline-content">
+                        
+                         <img src="NATICA_logo.png.jpg" alt="Natica Logo" class="experience-logo" loading="lazy">
+                        <!-- <img src="natica_logo.png" alt="Natica IT Consulting Logo" class="experience-logo" loading="lazy"> -->
+                        <h3>Cyber Security Intern</h3>
+                        <p>Natica IT Consulting - Stajyer</p>
+                        <p>Ağu 2025 - Eyl 2025 · 2 ay</p> <!-- Tarihi kendin düzelt -->
+                        <p>İstanbul, Türkiye</p>
+                        <button class="details-button" onclick="openModal('natica-experience')">Detay</button>
+                    </div>
+                    <div class="timeline-dot"></div>
+                </div>
+
+                <!-- Mevcut Ozztech deneyimi -->
                 <div class="timeline-item scaleIn" data-tilt data-tilt-max="8" data-tilt-speed="500" onclick="openModal('ozztech-experience')">
                     <div class="timeline-content">
                         <img src="OZZTECH_logo.png" alt="Ozztech Logo" class="experience-logo" loading="lazy">
                         <h3>Cyber Security Intern</h3>
                         <p>Ozztech Information Security and Software Inc. - Stajyer</p>
-                        <p>Term 2024 - Eyl 2024 · 3 ay</p>
+                        <p>Tem 2024 - Eyl 2024 · 3 ay</p>
                         <p>İstanbul, Türkiye</p>
                         <button class="details-button" onclick="openModal('ozztech-experience')">Detay</button>
                     </div>
@@ -246,7 +262,7 @@
         function openCertificate(fileName, event) {
             event.preventDefault();
             try {
-                const url = `./${fileName}`; // Ana dizindeki dosyaları hedefler
+                const url = `./${fileName}`;
                 window.open(url, '_blank');
             } catch (error) {
                 console.error('Sertifika açılırken hata:', error);
@@ -274,6 +290,11 @@
                 title: 'Cyber Security Intern - Ozztech',
                 description: 'Ozztech Information Security and Software Inc. staj deneyimim.',
                 details: '<ul><li>Ağ Güvenliği</li><li>Bilgisayar Ağları</li><li>Active Directory</li><li>Firewall</li><li>Müşteri Desteği</li><li>Ekip Çalışması</li><li>Microsoft Teknolojileri</li></ul>'
+            },
+            'natica-experience': {
+                title: 'Cyber Security Intern - Natica IT Consulting',
+                description: 'Natica IT Consulting staj deneyimim.',
+                details: '<ul><li>Active Directory yapısı</li><li>Ekip çalışması</li><li>Delinea Server Suite<br>(Profesyonel bilgisayar ağları yönetimi)</li><li>Crowdstrike<br>(EDR, XDR, SIEM teknolojileri)</li></ul>'
             }
         };
 
@@ -499,3 +520,5 @@
             }
         });
     </script>
+</body>
+</html>
